@@ -44,7 +44,7 @@ def otp_sequence():
     run_adb_command("adb shell screencap -p /sdcard/pantalla.png", delay=1)
     run_adb_command("adb pull /sdcard/pantalla.png", delay=1)
     run_adb_command("adb shell rm /sdcard/pantalla.png", delay=1)
-    # Ruta a tu imagen prueba
+    # Ruta a tu imagen
     imagen = Image.open("pantalla.png")
     # imagen.show()
 
